@@ -36,6 +36,8 @@ int main() {
 		send(clientSocket, response.c_str(), response.size(), 0);
 	}
 
+	std::cout << "bye" << std::endl;
+
 	closesocket(clientSocket);
 	closesocket(serverSocket);
 	WSACleanup();
